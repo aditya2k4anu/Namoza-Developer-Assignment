@@ -1,0 +1,440 @@
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f8fbff;
+    color:#222;
+    line-height:1.6;
+}
+
+/* ===========================
+   CONTAINER
+=========================== */
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+header{
+    width:100%;
+    background:#fff;
+    position:sticky;
+    top:0;
+    z-index:999;
+    box-shadow:0 2px 15px rgba(0,0,0,.08);
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:24px;
+    font-weight:700;
+    color:#0077B6;
+}
+
+.logo img{
+    width:45px;
+    height:45px;
+}
+
+.btn-nav{
+    text-decoration:none;
+    background:#0077B6;
+    color:#fff;
+    padding:12px 25px;
+    border-radius:8px;
+    transition:.3s;
+    font-weight:600;
+}
+
+.btn-nav:hover{
+    background:#005f90;
+}
+
+/* ===========================
+   HERO
+=========================== */
+
+.hero{
+    padding:80px 0;
+}
+
+.hero-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+}
+
+.hero-content h1{
+    font-size:48px;
+    line-height:1.2;
+    margin:20px 0;
+}
+
+.hero-content p{
+    font-size:18px;
+    color:#555;
+}
+
+.badge{
+    display:inline-block;
+    background:#dff6ff;
+    color:#0077B6;
+    padding:8px 18px;
+    border-radius:30px;
+    font-size:14px;
+    font-weight:600;
+}
+
+.hero-points{
+    margin:30px 0;
+}
+
+.hero-points div{
+    margin-bottom:15px;
+    font-size:18px;
+}
+
+.btn-primary{
+    display:inline-block;
+    text-decoration:none;
+    background:#0096C7;
+    color:white;
+    padding:15px 35px;
+    border-radius:8px;
+    font-size:18px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn-primary:hover{
+    background:#0077B6;
+}
+
+.hero-image img{
+    width:100%;
+    border-radius:20px;
+    box-shadow:0 20px 50px rgba(0,0,0,.12);
+}
+
+/* ===========================
+   TRUST
+=========================== */
+
+.trust{
+    background:white;
+    padding:60px 0;
+}
+
+.trust-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    text-align:center;
+    gap:25px;
+}
+
+.trust-grid h2{
+    color:#0077B6;
+    font-size:42px;
+}
+
+.trust-grid p{
+    color:#666;
+}
+
+/* ===========================
+   FEATURES
+=========================== */
+
+.features{
+    padding:90px 0;
+}
+
+.section-title{
+    text-align:center;
+    font-size:38px;
+    margin-bottom:50px;
+}
+
+.feature-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.card{
+    background:white;
+    padding:35px;
+    text-align:center;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:60px;
+    margin-bottom:20px;
+}
+
+.card h3{
+    margin-bottom:15px;
+    color:#0077B6;
+}
+
+/* ===========================
+   CONSULTATION
+=========================== */
+
+.consultation{
+    padding:90px 0;
+}
+
+.consultation-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+}
+
+.consultation-grid img{
+    width:100%;
+    border-radius:20px;
+}
+
+.consultation h2{
+    font-size:38px;
+    margin-bottom:20px;
+}
+
+.consultation p{
+    margin-bottom:25px;
+    color:#666;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+form input{
+    padding:15px;
+    font-size:16px;
+    border:1px solid #ddd;
+    border-radius:10px;
+}
+
+form input:focus{
+    outline:none;
+    border-color:#0077B6;
+}
+
+form button{
+    padding:16px;
+    border:none;
+    background:#0077B6;
+    color:white;
+    border-radius:10px;
+    font-size:17px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+form button:hover{
+    background:#005f90;
+}
+
+.hidden{
+    display:none;
+}
+
+#thankYou{
+    background:#e9fff0;
+    padding:30px;
+    border-radius:12px;
+    border:2px solid #3cb371;
+    margin-top:25px;
+}
+
+/* ===========================
+   REVIEWS
+=========================== */
+
+.reviews{
+    padding:90px 0;
+    background:white;
+}
+
+.review-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.review-card{
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.review-card img{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:15px;
+}
+
+.review-card h3{
+    margin-bottom:10px;
+}
+
+.review-card p{
+    color:#555;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+    background:#003049;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+/* ===========================
+   ANIMATIONS
+=========================== */
+
+.card,
+.review-card,
+.hero-image img,
+.consultation-grid img{
+    transition:.4s;
+}
+
+.card:hover,
+.review-card:hover{
+    transform:translateY(-10px);
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media(max-width:992px){
+
+.hero-grid,
+.consultation-grid{
+grid-template-columns:1fr;
+text-align:center;
+}
+
+.hero-content h1{
+font-size:36px;
+}
+
+.feature-grid{
+grid-template-columns:1fr;
+}
+
+.review-grid{
+grid-template-columns:1fr;
+}
+
+.trust-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+.hero-points{
+display:flex;
+flex-direction:column;
+align-items:center;
+}
+
+}
+
+@media(max-width:600px){
+
+.logo{
+font-size:20px;
+}
+
+.logo img{
+width:38px;
+height:38px;
+}
+
+.btn-nav{
+padding:10px 18px;
+font-size:14px;
+}
+
+.hero{
+padding:50px 0;
+}
+
+.hero-content h1{
+font-size:30px;
+}
+
+.hero-content p{
+font-size:16px;
+}
+
+.section-title{
+font-size:30px;
+}
+
+.consultation h2{
+font-size:30px;
+}
+
+.trust-grid{
+grid-template-columns:1fr;
+}
+
+.btn-primary{
+width:100%;
+text-align:center;
+}
+
+form button{
+width:100%;
+}
+
+}
